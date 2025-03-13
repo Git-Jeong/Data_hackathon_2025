@@ -1,11 +1,9 @@
 # data file + img  <- due to Copyright
-*.csv
+# *.csv
 *.jpg
 *.jpeg
 *.png  
-*.svg
-/study/GPU
-/study/anaconda_projects
+*.svg 
 *.dot
 *.pkl
 

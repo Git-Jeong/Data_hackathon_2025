@@ -1,8 +1,8 @@
-# data_hackathon_2025
+# 광진구 빅데이터 분석 공모전
 
  ### 참가한 공모전
  - **[2025년 광진구 빅데이터 분석 공모전](https://www.gwangjin.go.kr/portal/bbs/B0000003/view.do?nttId=6351995&menuNo=200192&pSiteId=portal&pageIndex=2)**
-
+ 
  
  ### 프로젝트 목적
  
@@ -18,8 +18,7 @@
   - **Kakao map api**를 활용하여 시설(장소)의 위치를 경도, 위도로 변환
   - 팀프로젝트를 통한 **협업의 겸험** 축적
   - 머신러닝 **Null(Null)** 모델을 활용한 머린러닝 활용 능력 축적 
-
- ---
+ 
 
  ### 데이터 출처
 

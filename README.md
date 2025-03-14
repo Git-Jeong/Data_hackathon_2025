@@ -1,5 +1,10 @@
 # data_hackathon_2025
  
+ ## 프로젝트 목적
+- 서울시 광진구의 도로 열선 설치를 위한 우선순위 파악
+  - ...
+
+ 
  ## 데이터 출처
 
 - 서울열린데이터광장 ([https://data.seoul.go.kr/](https://data.seoul.go.kr/))

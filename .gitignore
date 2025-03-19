@@ -27,8 +27,9 @@ ipython_config.py
 */.conda/*
 */.condarc
 /anaconda_projects
-/Data_hackathon_2025/anaconda_projects
-/Data_hackathon_2025/anaconda_projects
+/Data_Analysis/anaconda_projects
+/Data_Analysis/anaconda_projects
 
 # API KEY
-/Data_hackathon_2025/API KEY/*.xlsx
+/Data_Analysis/API KEY/*.xlsx
+*/API KEY/*.xlsx

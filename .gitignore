@@ -8,6 +8,19 @@
 *.pkl
 *.pdf
 *./data
+/Data_Analysis/경사도 분석/data
+Data_Analysis/API KEY/.emv
+/Data_Analysis/도로 경사 분석/data
+*.geojson
+/Data_Analysis/경사도 분석/make_file
+/Data_Analysis/광진구 경계선 추출/data
+/Data_Analysis/광진구 경계선 추출/make_file
+
+/Data_Analysis/광진구 계절별 사고건수 분석/data/*.xlsx
+/Data_Analysis/광진구 계절별 사고건수 분석/data/*.csv
+
+/Data_Analysis/광진구 동별 결빙 사고분석/data/*.xlsx
+/Data_Analysis/광진구 동별 결빙 사고분석/data/*.csv
 
 
 # Jupyter Notebook
@@ -35,12 +48,4 @@ ipython_config.py
 
 # API KEY
 /Data_Analysis/API KEY/*.xlsx
-*/API KEY/*.xlsx
-/Data_Analysis/경사도 분석/data
-Data_Analysis/API KEY/.emv
-/Data_Analysis/도로 경사 분석/data
-*.geojson
-/Data_Analysis/경사도 분석/make_file
-/Data_Analysis/광진구 경계선 추출/data
-/Data_Analysis/광진구 경계선 추출/make_file
-/Data_Analysis/광진구 계절별 사고건수 분석/data
+*/API KEY/*.xlsx 

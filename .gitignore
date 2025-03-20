@@ -14,8 +14,7 @@
 *.shx
 *.geojson  
 *.xml
-*.zip
-
+*.zip 
 *./data/*.csv
 *./data/*.xlsx
 **/data/*.csv
@@ -25,12 +24,7 @@
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*/.ipynb_checkpoints/*
-*/ex_file/*
-
-# IPython
-profile_default/
-ipython_config.py
+*/.ipynb_checkpoints/*  
 
 # Mac OS
 .DS_Store
@@ -42,10 +36,9 @@ ipython_config.py
 */.anaconda/*
 */.conda/*
 */.condarc
-/anaconda_projects
-/Data_Analysis/anaconda_projects
-/Data_Analysis/anaconda_projects
+*/anaconda_projects
+**/anaconda_projects 
 
-# API KEY
-/Data_Analysis/API KEY/*.xlsx
-*/API KEY/*.xlsx  
+# # API KEY
+**/API_KEY/.xlsx
+*/API_KEY/*.xlsx

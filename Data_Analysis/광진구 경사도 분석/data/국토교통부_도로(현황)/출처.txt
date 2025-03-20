@@ -1,0 +1,6 @@
+C_UQ151.dbf
+C_UQ151.prj
+C_UQ151.shp
+C_UQ151.shx
+
+디지털 국토원 https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?dsId=30074

@@ -1,0 +1,7 @@
+BND_ADM_DONG_PG.cpg
+BND_ADM_DONG_PG.cpg
+BND_ADM_DONG_PG.prj
+BND_ADM_DONG_PG.shp
+BND_ADM_DONG_PG.shx
+
+디지털트윈국토 https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?dsId=30017

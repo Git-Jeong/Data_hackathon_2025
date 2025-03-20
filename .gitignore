@@ -6,8 +6,7 @@
 *.svg 
 *.dot
 *.pkl
-*.pdf
-*./data
+*.pdf 
 /Data_Analysis/경사도 분석/data
 Data_Analysis/API KEY/.emv
 /Data_Analysis/도로 경사 분석/data
@@ -16,6 +15,8 @@ Data_Analysis/API KEY/.emv
 /Data_Analysis/광진구 경계선 추출/data
 /Data_Analysis/광진구 경계선 추출/make_file
 
+*./data/*.csv
+*./data/*.xlsx
 **/data/*.csv
 **/data/*.xlsx
 

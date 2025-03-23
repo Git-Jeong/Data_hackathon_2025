@@ -41,8 +41,9 @@
 
 # # API KEY
 **/API_KEY/.xlsx
-*/API_KEY/*.xlsx
-/Data_Analysis/광진구 경사도 분석/cache
-/Data_Analysis/광진구 경사도 분석/data/t_data
-/Data_Analysis/광진구 경사도 분석/data/공공데이터_서울시_도보_네트워크
-/Data_Analysis/광진구 경사도 분석/data
+*/API_KEY/*.xlsx  
+
+# cache
+*/cache/*
+**/cache/*
+***/cache/*

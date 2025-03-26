@@ -4,3 +4,12 @@
 
 서울시 열선 설치 현황_2025.3.csv
 서울 열린데이터 광장 : https://data.seoul.go.kr/dataList/OA-22584/F/1/datasetView.do
+
+서울시 사회복지시설 목록.csv
+서울 열린데이터 광장 : https://data.seoul.go.kr/dataList/OA-20376/S/1/datasetView.do
+
+서울시 어린이집 정보(표준 데이터)
+서울 열린데이터 광장 : https://data.seoul.go.kr/dataList/OA-20300/S/1/datasetView.do
+
+서울시 지역아동센터 시설현황정보
+서울 열린데이터 광장 : https://data.seoul.go.kr/dataList/OA-20967/S/1/datasetView.do

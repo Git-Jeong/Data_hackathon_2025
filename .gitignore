@@ -47,3 +47,7 @@
 */cache/*
 **/cache/*
 ***/cache/*
+
+# nbconvert
+**/temp_nbconvert/*
+***/temp_nbconvert/*

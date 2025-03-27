@@ -46,10 +46,13 @@
 */API_KEY/*.xlsx  
 
 # cache
-*/cache/*
+*/cache/* 
 **/cache/*
+**/cache_directory/*
 ***/cache/*
+***/cache_directory/*
+****/cache_directory/*
 
 # nbconvert
 **/temp_nbconvert/*
-***/temp_nbconvert/*
+***/temp_nbconvert/* 

@@ -1,2 +1,0 @@
-서울시 열선 설치 현황_2025.3.csv
-서울 열린데이터 광장 : https://data.seoul.go.kr/dataList/OA-22584/F/1/datasetView.do

@@ -21,6 +21,18 @@
 **/data/*.xlsx
 ***/data/*.csv
 ***/data/*.xlsx
+****/data/*.csv
+****/data/*.xlsx
+*./make_file/*.csv
+*./make_file/*.xlsx
+**/make_file/*.csv
+**/make_file/*.xlsx
+***/make_file/*.csv
+***/make_file/*.xlsx
+****/make_file/*.csv
+****/make_file/*.xlsx
+*****/make_file/*.csv
+*****/make_file/*.xlsx
 
 
 
@@ -40,8 +52,10 @@
 */.condarc
 */anaconda_projects
 **/anaconda_projects 
+***/anaconda_projects 
 
 # # API KEY
+***/API_KEY/.xlsx
 **/API_KEY/.xlsx
 */API_KEY/*.xlsx  
 
@@ -55,4 +69,11 @@
 
 # nbconvert
 **/temp_nbconvert/*
-***/temp_nbconvert/* 
+***/temp_nbconvert/*  
+/Python/Data_Analysis/서울시 열선 위치 분석/make_file/gu_division
+/Python/Data_Analysis/서울시_자동차_도로_수집/data/공동작업
+/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/division/first_round
+/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/division/second_round
+/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/division/third_round
+/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/gu_division
+/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/공동작업

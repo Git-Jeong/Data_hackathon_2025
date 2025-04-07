@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_319f08a0e63809c364c473d7e798d286 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_319f08a0e63809c364c473d7e798d286" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_319f08a0e63809c364c473d7e798d286 = L.map(
+                "map_319f08a0e63809c364c473d7e798d286",
+                {
+                    center: [37.54995, 127.08272],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_13adb9dd29cb9f9b1acd7e8545c1e06d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_13adb9dd29cb9f9b1acd7e8545c1e06d.addTo(map_319f08a0e63809c364c473d7e798d286);
+        
+    
+            var poly_line_2bd6562985d72ccc75b3864398d1a7d3 = L.polyline(
+                [[37.55079182, 127.100871], [37.55336842, 127.0974968]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_319f08a0e63809c364c473d7e798d286);
+        
+    
+            poly_line_2bd6562985d72ccc75b3864398d1a7d3.bindTooltip(
+                `<div>
+                     도로명: 워커힐로<br>총길이: 1.0 km<br>방위각: 322.6338382°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c80868761bf7038e7ff01b45335f2d20 = L.polyline(
+                [[37.5464287, 127.1009516], [37.54888775, 127.0939981]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_319f08a0e63809c364c473d7e798d286);
+        
+    
+            poly_line_c80868761bf7038e7ff01b45335f2d20.bindTooltip(
+                `<div>
+                     도로명: 천호대로<br>총길이: 1.0 km<br>방위각: 340.5243094°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f801802dc107c79cb65491d62434be23 = L.polyline(
+                [[37.55862257, 127.1116912], [37.56173594, 127.1147217]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_319f08a0e63809c364c473d7e798d286);
+        
+    
+            poly_line_f801802dc107c79cb65491d62434be23.bindTooltip(
+                `<div>
+                     도로명: 아차산로<br>총길이: 2.0 km<br>방위각: 225.7726096°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

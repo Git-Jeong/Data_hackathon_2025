@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+ xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring 
+http://mybatis.org/schema/mybatis-spring-1.2.xsd 
+http://www.springframework.org/schema/beans 
+https://www.springframework.org/schema/beans/spring-beans.xsd" >
+ <!-- root-context.xml : DB 환경설정(DB정보)에 대해 작성하는 파일 -->
+ <!-- bean : Spring에서 생성하는 객체 단위
+ 		1. HikariCP (DBCP) 객체 생성 : DB 연결 내용을 가지고 있는 객체	
+ 			ex) Pokemon p1 = new Pokemon(); -> java에서 객체 생성
+ 			p1.name = "피카츄" // 필드 초기화
+ 			p1.age = 3
+ 			Pokemon p2 = new Pokemon("야옹이", 5); //객체 생성 + 필드 초기화
+  -->
+  
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="location" value="classpath:application.properties"/>
+</bean>
+
+  <!-- DB연결과정 -->
+   <bean class="com.zaxxer.hikari.HikariConfig" id="HikariConfig">
+     <property name="driverClassName" value="${spring.datasource.driver-class-name}" />
+     <property name="jdbcUrl" value="${spring.datasource.url}" />
+     <property name="username" value="${spring.datasource.username}" />
+     <property name="password" value="${spring.datasource.password}" />
+  </bean>
+  <!-- Connection 한 개를 위한 DB 연결 정보를 가진 객체 생성 -->
+
+  <!-- HikariDataSource 객체 생성 -->  
+  <!-- HikariDataSource datasource - new HikariDatasource(); -->
+  
+  <bean class="com.zaxxer.hikari.HikariDataSource" id="HikariDataSource">
+    <!-- DB 접속(연결) 정보를 생성자로 주입! -->
+	<constructor-arg ref="HikariConfig" />
+  </bean>  
+  
+  <!-- SqlSessionFactory Bean 객체 생성 -->
+  <!-- mybatis-spring-2.0.6.jar
+  	   -> org.mybatis.spring
+  	   -> SqlSessionFactoryBean.calss 
+   -->
+  <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="SqlSessionFactoryBean">
+  	<property name="dataSource" ref="HikariDataSource" />
+  </bean>
+  
+  <!-- Mapper(interface)를 Spring 특정 메모리 공간에 올리는 방법(scan)
+  	   : Mapper파일이 어디 있는지 경로 인지 필요!
+  	   		-> Mapper 파일의 위치(com.smhrd.database) 명시!
+
+   -->
+  <mybatis-spring:scan base-package="com.smhrd.database" />
+  
+</beans>

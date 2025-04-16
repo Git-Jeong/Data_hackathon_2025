@@ -1,20 +1,5 @@
 # data file + img  <- due to Copyright
-# *.csv
-*.jpg
-*.jpeg
-*.png  
-*.svg 
-*.dot
-*.pkl
-*.pdf 
-*.cpg
-*.dbf
-*.prj
-*.shp
-*.shx
-*.geojson  
-*.xml
-*.zip 
+
 *./data/*.csv
 *./data/*.xlsx
 **/data/*.csv
@@ -33,6 +18,27 @@
 ****/make_file/*.xlsx
 *****/make_file/*.csv
 *****/make_file/*.xlsx
+
+
+# data file + img  <- due to Copyright
+Python/*./data/*.csv
+Python/*./data/*.xlsx
+Python/**/data/*.csv
+Python/**/data/*.xlsx
+Python/***/data/*.csv
+Python/***/data/*.xlsx
+Python/****/data/*.csv
+Python/****/data/*.xlsx
+Python/*./make_file/*.csv
+Python/*./make_file/*.xlsx
+Python/**/make_file/*.csv
+Python/**/make_file/*.xlsx
+Python/***/make_file/*.csv
+Python/***/make_file/*.xlsx
+Python/****/make_file/*.csv
+Python/****/make_file/*.xlsx
+Python/*****/make_file/*.csv
+Python/*****/make_file/*.xlsx
 
 
 
@@ -59,21 +65,28 @@
 **/API_KEY/.xlsx
 */API_KEY/*.xlsx  
 
-# cache
-*/cache/* 
-**/cache/*
-**/cache_directory/*
-***/cache/*
-***/cache_directory/*
-****/cache_directory/*
 
-# nbconvert
-**/temp_nbconvert/*
-***/temp_nbconvert/*  
-/Python/Data_Analysis/서울시 열선 위치 분석/make_file/gu_division
-/Python/Data_Analysis/서울시_자동차_도로_수집/data/공동작업
-/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/division/first_round
-/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/division/second_round
-/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/division/third_round
-/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/gu_division
-/Python/Data_Analysis/서울시_자동차_도로_수집/make_file/공동작업
+JSP/Servers/*
+JSP/Servers1/*
+/JSP/.metadata
+/JSP/.metadata/
+
+.metadata/.plugins/*/.history/*
+*/.metadata/.plugins/*/.history/*
+*/.metadata
+/JSP/.metadata/*
+/JSP/.metadata 
+JSP/SpringMVC/.env 
+JSP/SpringMVC/target/classes/.env
+JSP/SpringMVC/src/main/resources/application.properties
+JSP/SpringMVC/target/classes/application.properties
+/JSP/.metadata
+JSP/SpringMVC/target/m2e-wtp/web-resources/META-INF/maven/com.smhrd/web/pom.properties
+/.metadata/
+/Servers
+/SpringMVC/target
+*/application.properties
+**/application.properties
+***/application.properties
+****/application.properties
+/SpringMVC/Servers

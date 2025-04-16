@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+:root { 
+	--header-height: 80px; 
+	--footer-height: 60px; 
+	
+	--header-back-color: transparent; 
+	--body-back-color: transparent; 
+	--content-back-color : transparent;
+	--footer-back-color: transparent;
+	
+	--header-margin : 60px;
+	
+	--page-width-size : 1200px;
+	
+	/* cae0f3 */
+	--page-container-bg : #D6F1FF;
+}

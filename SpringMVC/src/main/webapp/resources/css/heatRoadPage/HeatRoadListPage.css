@@ -1,0 +1,82 @@
+@import url("../RootCss.css");
+
+.heatRoadListPageContainer {/* 
+	  background: var(--page-container-bg);
+	  padding: 40px 20px;
+	  border-radius: 16px;
+	  width: var(--page-width-size);  
+	  margin-left: auto;         중앙 정렬
+	  margin-right: auto;         중앙 정렬
+	  margin-bottom: 60px;
+	  display: flex;
+	  flex-direction: column;
+	  gap: 20px; */
+	margin-top : 20px;
+
+}
+
+.heatRoadListPageForm{
+	width: var(--page-width-size);
+	padding: 20px; 
+	margin-top: 30px;
+	background-color: var(--page-container-bg);
+    border-radius: 15px;
+	display: flex;
+}
+
+/* 도로 목록 스타일 */
+#roadList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#roadList li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: #edf9ff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333366;
+}
+
+#roadList li:hover {
+  background-color: #dbeeff;
+  transform: translateX(5px);
+}
+
+
+
+/* 지도 영역 */
+#map {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.heatRoadListContainer {
+	width: 250px;
+	height: 500px;
+	overflow-y: auto;
+	margin-right: 20px;
+	padding: 0 10px 10px 10px; /* 위쪽 패딩만 제거 */
+	display: flex;
+	flex-direction: column;
+	position: relative; /* sticky가 작동하려면 필요 */
+}
+
+.heatRoadNameListTitle {
+	position: sticky;
+	top: 0;
+	background: var(--page-container-bg);
+	z-index: 1;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.heatRoadNameList {
+	margin-top: 10px; /* 필요에 따라 조정 */
+}

@@ -1,0 +1,347 @@
+@charset "UTF-8";
+@import url('RootCss.css');
+
+.boardContent-container-complain,
+.boardContent-container-comment {
+    width: var(--page-width-size);
+    background-color: var(--page-container-bg);
+    border-radius: 15px;
+    padding : 20px;
+}
+
+/* 각 행 */
+.boardContent-row {
+    display: flex;
+    justify-content: flex-start; /* 또는 필요에 따라 center */
+    gap: 20px; /* 원하는 간격 */
+}
+
+/* 각 열의 비율 설정 */
+.boardContent-td-3space-1 { 
+    /* width: calc(var(--page-width) * 0.6px); */
+    width: 720px;
+}
+
+.boardContent-td-3space-2 {
+    width: 20%;
+}
+
+.boardContent-td-3space-3 {
+    width: 20%;
+}
+
+.boardContent-td-2space-1 {
+    width: 60%;
+}
+
+.boardContent-td-2space-2 {
+    width: 40%;
+}
+
+.boardContent-td-3space-1,
+.boardContent-td-3space-2,
+.boardContent-td-3space-3{
+	margin-bottom: 20px;
+}
+
+.boardContent-td-2space-1,
+.boardContent-td-2space-2{
+    padding-top: 20px;
+    border-top: 1px solid;
+}
+
+.boardContent-td-3space-1,
+.boardContent-td-3space-2,
+.boardContent-td-3space-3,
+.boardContent-td-2space-1,
+.boardContent-td-2space-2{ 
+    display: flex;
+    
+}
+
+/* /* 제목과 값의 배치 */
+.boardContent-title { 
+    display: flex;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+	align-content: center; 
+    align-items: center;
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.boardContent-value-content,
+.boardContent-header-value {
+    display: flex;
+   	height:100%;
+    width: 620px;
+    font-size: 17px;
+    color: #444;
+    overflow: auto; 
+    word-wrap: break-word;
+    flex-direction: column;
+}
+
+.boardContent-header-value{
+    justify-content: center;
+    align-items: center;
+}
+
+.boardContent-value-content{ 
+	text-align: left;
+	width : 100%;
+	height : 100%;
+	padding : 10px;
+	background-color: white;
+    border-radius: 15px;
+    font-size: 21px;
+    
+}
+
+.boardContent-subtitle-value {
+    display: flex;
+   	height:100%;
+    width: 130px;
+    font-size: 17px;
+    color: #444;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    word-wrap: break-word; 
+    flex-direction: column; 
+}
+
+/* 이미지 */
+.boardContent-value-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardContent-img { 
+	width: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+	overflow: hidden;
+	transition: transform 0.4s ease; /* 부드러운 트랜지션 효과 */
+}
+
+.boardContent-img:hover {
+	transform: scale(1.1); /* 마우스 호버 시 크기 증가 */
+	padding: 0; 
+	border: 1px solid;
+}
+
+.complain-comment-line{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+.boardContent-btns {
+    width: var(--page-width-size);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boardContent-left-btns {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.boardContent-right-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.boardContent-back-btn {
+    width: 100px;   /* 고정된 너비 */
+    height: 40px;   /* 고정된 높이 */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boardContent-back-btn:hover {
+    background-color: #0056b3;
+}
+
+.boardContent-insert-btn{
+    width: 100px;   /* 고정된 너비 */
+    height: 40px;   /* 고정된 높이 */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #90C6DB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+
+.boardContent-insert-btn:hover {
+    background-color: #7EBBD3;
+}
+
+.boardContent-btn-form input[type="submit"] {
+    width: 100px;   /* 고정된 너비 */
+    height: 40px;   /* 고정된 높이 */
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+	padding: 8px 16px;
+	border-radius: 4px;
+}
+}
+
+.boardContent-update-btn {
+    background-color: #90C6DB;
+}
+
+.boardContent-update-btn:hover {
+    background-color: #7EBBD3;
+}
+
+.boardContent-delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.boardContent-delete-btn:hover {
+    background-color: #c82333;
+}
+
+.boardContent-check-btn {
+    margin: 20px 0;
+    width: var(--page-width-size);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.boardContent-btn-assword-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    visibility: hidden;
+}
+
+.boardContent-password-input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+.boardContent-btn-submit, .boardContent-btn-cancel {
+    width: 100px;   /* 고정된 너비 */
+    height: 40px;   /* 고정된 높이 */
+    font-size: 14px;
+    border: none;
+	padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boardContent-btn-submit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.boardContent-btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.boardContent-btn-cancel {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.boardContent-btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+/*어드민 페이지용*/
+textarea.boardContent-header-value {
+	resize: none;
+}
+
+.preview-img {
+	max-width: 100%;
+	max-height: 200px;
+	margin-top: 10px;
+	display: none;
+}
+
+.admin-btn-list{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap:30px;
+	margin-top: 30px;
+}
+
+
+.comment-cancel-btn{
+    width: 100px;   /* 고정된 너비 */
+    height: 40px;   /* 고정된 높이 */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ff2f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-submit-btn{
+    width: 100px;   /* 고정된 너비 */
+    height: 40px;   /* 고정된 높이 */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #2f3fff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-cancel-btn:hover {
+	background-color: #d82a2a;
+}
+
+.comment-submit-btn:hover {
+	background-color: #372ecb;
+}

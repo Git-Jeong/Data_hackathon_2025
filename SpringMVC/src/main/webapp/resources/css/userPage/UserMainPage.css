@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url('RootCss.css');
+
+.mainPageSection {
+	justify-content: center;
+	font-size: 2rem;
+	background: transparent;
+	/* border-bottom: 1px solid #ccc; */
+	padding-bottom: 50px;
+} 
+
+.mainPageUpperContainer {
+	display: block;
+	flex-direction: column;
+	text-align: center;
+}
+
+.mainPageUpperTitle {
+	margin-top : 50px;
+	font-size: 70px;
+	font-weight: 900;
+	display: block;
+}
+
+.mainPageContainerWideBox {
+	width: var(--page-width-size);
+	gap: 50px;
+	display: flex;
+	justify-content : space-between;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;  	
+}
+
+.mainPageContainerWideBoxElement {
+	flex: 1;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	background: #cae0f3;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.mainPageContainerWideBoxElement:hover {
+	transform: translateY(-3px);
+	background: #b3d4f0;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+} 
+
+.mainPageContainerImg {
+	border: none;
+	border-radius: 10px; 	
+	overflow: hidden;
+}
+
+.mainPageContainerImg img {
+	width: 100%;
+	height: 100%;
+}
+
+.mainPageContainerDetail {
+	text-align: center;
+	align-content: center;
+}
+
+.mainPageChartContainer{
+	width: var(--page-width-size); 
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top : 50px;
+	margin-bottom : 50px;
+	justify-content:space-between; 
+	gap : 20px;
+	flex-wrap: wrap;
+}
+
+.mainPageChartElement {
+	flex : 1;
+	width: 100%;
+	height: 100%;
+} 
+
+.mainPageCharImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.mainPageChartDetail {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;  
+}
+
+.date-time {
+  font-weight: bold; 
+}
+
+#barChart,
+#donutChart {
+  width: 400px;
+  height: 400px;
+}
+
+.roadDescriptionContainer {
+	width: var(--page-width-size);
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	justify-content:space-between; 
+	flex-wrap: wrap;
+}
+
+.roadImgBox {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: auto;
+	margin-bottom: auto;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.roadImgBox:hover {
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.roadImgBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.roadImgBoxDetail {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding-top: 2px 6px;
+	font-size: 20px;
+	border-top-left-radius: 5px;
+}
+
+/* 표 스타일 */
+.userMainPage-heatRoadTable {
+  width: 100%;
+  border-collapse: collapse; 
+  font-size: 14px;
+  background-color: #fcfcfc;
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.userMainPage-heatRoadTable thead {
+  background-color: #34495e;
+  color: white;
+}
+
+.userMainPage-heatRoadTable th,
+.userMainPage-heatRoadTable td {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  vertical-align: top;
+  font-size: 17px;
+}
+
+.userMainPage-heatRoadTable tbody tr:hover {
+  background-color: #f3f9ff;
+}
+
+/* 제목 스타일 */
+.roadDescriptionDetail h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px; 
+}
+
+/* 설명 문단 스타일 */
+.roadDescriptionDetail p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}

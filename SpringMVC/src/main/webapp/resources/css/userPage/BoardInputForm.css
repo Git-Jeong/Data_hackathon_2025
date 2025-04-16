@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('../RootCss.css');
+
+form {
+	margin-top: 30px;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"], textarea {
+	width: 100%;
+	padding: 8px;
+	margin-top: 4px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+}
+
+textarea {
+	height: 100px;
+	resize: none;
+}
+
+div[align="center"] {
+	margin-top: 20px;
+}
+
+.boardInsertForm {
+	width: var(--page-width-size);
+	padding: 20px;
+	margin: 0 auto;
+	background-color: var(--page-container-bg);
+    border-radius: 15px;
+}
+
+.location_input_box {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.location_input_box input {
+	width: 90%;
+}
+
+.location_input_box_button {
+	width: 10%;
+	border: none;
+	border-radius: 10px;
+	margin-top: 4px;
+	background: #d3d3d3;
+	transition: background 0.3s, color 0.3s;
+}
+
+.location_input_box_button:hover {
+	background: #a9a9a9;
+	color: white;
+	cursor: pointer;
+}
+
+/* 취소 버튼 */
+.btn-insert-cancel, .btn-update-cancel {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ff5733; /* 버튼 색상 */
+	color: white;
+	text-align: center;
+	text-decoration: none; /* 링크의 밑줄 제거 */
+	border-radius: 5px; /* 둥근 모서리 */
+	font-size: 16px;
+	cursor: pointer; /* 커서 모양을 버튼처럼 */
+	border: none;
+	margin-right: 10px; /* 버튼 간격 */
+}
+
+.btn-insert-cancel:hover, .btn-update-cancel:hover {
+	background-color: #be5a45; /* 호버 시 색상 변경 */
+}
+
+/* 되돌리기 버튼 */
+.btn-insert-reset, .btn-update-reset {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #e0e0e0; /* 회색 버튼 */
+	color: #333;
+	text-align: center;
+	text-decoration: none; /* 링크의 밑줄 제거 */
+	border-radius: 5px; /* 둥근 모서리 */
+	font-size: 16px;
+	cursor: pointer; /* 커서 모양을 버튼처럼 */
+	border: none;
+	margin-right: 10px; /* 버튼 간격 */
+}
+
+.btn-insert-reset:hover, .btn-update-reset:hover {
+	background-color: #c0c0c0; /* 호버 시 색상 변경 */
+}
+
+/* 작성 버튼 */
+.btn-insert-submit, .btn-update-submit {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #90C6DB;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+}
+
+.btn-insert-submit:hover, .btn-update-submit:hover {
+	background-color: #7EBBD3; /* 호버 시 색상 변경 */
+}

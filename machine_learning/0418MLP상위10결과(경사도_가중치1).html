@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db3504bc17513026552102e783faf3b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_db3504bc17513026552102e783faf3b1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_db3504bc17513026552102e783faf3b1 = L.map(
+                "map_db3504bc17513026552102e783faf3b1",
+                {
+                    center: [37.543609995, 127.08772631],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_756f4016cd4f33a19d04d03b695be834 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_756f4016cd4f33a19d04d03b695be834.addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var poly_line_708ffadd59795a431c0ea641986b8d0b = L.polyline(
+                [[37.551606, 127.0907819], [37.5514333, 127.090201]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_7bc2fca5d5d66a0445bf9b125bbc39b4 = L.marker(
+                [37.5514333, 127.090201],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_0af053c94c6244a797886838e6b9e2c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17cddb849da7d48c525d3877c7b3c9c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_094d45e3875470091351235f0859c6bd = $(`<div id="html_094d45e3875470091351235f0859c6bd" style="width: 100.0%; height: 100.0%;">Index: 4445<br>도로명: 천호대로131길<br>점수: 0.999738872051239<br>경사도: 2.79</div>`)[0];
+                popup_17cddb849da7d48c525d3877c7b3c9c5.setContent(html_094d45e3875470091351235f0859c6bd);
+            
+        
+
+        marker_7bc2fca5d5d66a0445bf9b125bbc39b4.bindPopup(popup_17cddb849da7d48c525d3877c7b3c9c5)
+        ;
+
+        
+    
+    
+                marker_7bc2fca5d5d66a0445bf9b125bbc39b4.setIcon(icon_0af053c94c6244a797886838e6b9e2c6);
+            
+    
+            var poly_line_72e1ba64571b7640fdd9b3c31a447f10 = L.polyline(
+                [[37.5499961, 127.1095432], [37.5483633, 127.1093131]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_06508fc724886006d79894a982d6e7ce = L.marker(
+                [37.5483633, 127.1093131],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_a80f93f4adf02216805534b8cedb523a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34ca0e571060801f144d39e45832b1f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8ac51d5b1b21cacc580900c73120864 = $(`<div id="html_d8ac51d5b1b21cacc580900c73120864" style="width: 100.0%; height: 100.0%;">Index: 4424<br>도로명: 아차산로78가길<br>점수: 0.9946119785308838<br>경사도: 2.22</div>`)[0];
+                popup_34ca0e571060801f144d39e45832b1f1.setContent(html_d8ac51d5b1b21cacc580900c73120864);
+            
+        
+
+        marker_06508fc724886006d79894a982d6e7ce.bindPopup(popup_34ca0e571060801f144d39e45832b1f1)
+        ;
+
+        
+    
+    
+                marker_06508fc724886006d79894a982d6e7ce.setIcon(icon_a80f93f4adf02216805534b8cedb523a);
+            
+    
+            var poly_line_db1ae511e9ca0d8194e8551820898c84 = L.polyline(
+                [[37.5555421, 127.0950451], [37.5552052, 127.094466]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_fbae3df174771378101b71a3f7a44bce = L.marker(
+                [37.5552052, 127.094466],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_fb7de6921a567b46e81a98a419a081c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35e82d823ab375c8e67544fb4b3963b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be9df32439112c0cf067d580412f9b45 = $(`<div id="html_be9df32439112c0cf067d580412f9b45" style="width: 100.0%; height: 100.0%;">Index: 5352<br>도로명: 영화사로13길<br>점수: 0.988661527633667<br>경사도: 8.33</div>`)[0];
+                popup_35e82d823ab375c8e67544fb4b3963b7.setContent(html_be9df32439112c0cf067d580412f9b45);
+            
+        
+
+        marker_fbae3df174771378101b71a3f7a44bce.bindPopup(popup_35e82d823ab375c8e67544fb4b3963b7)
+        ;
+
+        
+    
+    
+                marker_fbae3df174771378101b71a3f7a44bce.setIcon(icon_fb7de6921a567b46e81a98a419a081c5);
+            
+    
+            var poly_line_8c5ef7b484473475418b4a29cc9ce0fc = L.polyline(
+                [[37.539403, 127.0724512], [37.5402879, 127.0729148]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_a6f51a4ad70df2d86a944ae44b57d108 = L.marker(
+                [37.5402879, 127.0729148],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_c3ced780afbd31546f2b47629f42e1f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d1cbeac3f39d20877aadb525073cdb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d0469c8dc23b10ea276153083dff06c = $(`<div id="html_2d0469c8dc23b10ea276153083dff06c" style="width: 100.0%; height: 100.0%;">Index: 6359<br>도로명: 명일로<br>점수: 0.9858107566833496<br>경사도: 0.59</div>`)[0];
+                popup_4d1cbeac3f39d20877aadb525073cdb1.setContent(html_2d0469c8dc23b10ea276153083dff06c);
+            
+        
+
+        marker_a6f51a4ad70df2d86a944ae44b57d108.bindPopup(popup_4d1cbeac3f39d20877aadb525073cdb1)
+        ;
+
+        
+    
+    
+                marker_a6f51a4ad70df2d86a944ae44b57d108.setIcon(icon_c3ced780afbd31546f2b47629f42e1f8);
+            
+    
+            var poly_line_d4dc9692cea35e9fba6636c94f048e04 = L.polyline(
+                [[37.5468555, 127.102232], [37.5472272, 127.1021215]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_ce62330a7792c1e9b46baac5e2983916 = L.marker(
+                [37.5472272, 127.1021215],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_7aabf3d58b64b16626af17d874be50f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd88f0e463957c0e41e32cbac521d22a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa9df30546b3813ce237775c30538d49 = $(`<div id="html_aa9df30546b3813ce237775c30538d49" style="width: 100.0%; height: 100.0%;">Index: 4728<br>도로명: 광장로1길<br>점수: 0.9844315648078918<br>경사도: 1.67</div>`)[0];
+                popup_fd88f0e463957c0e41e32cbac521d22a.setContent(html_aa9df30546b3813ce237775c30538d49);
+            
+        
+
+        marker_ce62330a7792c1e9b46baac5e2983916.bindPopup(popup_fd88f0e463957c0e41e32cbac521d22a)
+        ;
+
+        
+    
+    
+                marker_ce62330a7792c1e9b46baac5e2983916.setIcon(icon_7aabf3d58b64b16626af17d874be50f2);
+            
+    
+            var poly_line_a0a345a378167b8afc49284c575f170d = L.polyline(
+                [[37.5393058, 127.0769266], [37.539602, 127.0770623]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_fdd1294973ee13849aa739a89e60864e = L.marker(
+                [37.539602, 127.0770623],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_0c68eeddf9c19bb6395124b58e43c602 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2ab3a539e1aa32c7541614ff6b8e2cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca9d69fb6f4abc1212d2b42971f04e2a = $(`<div id="html_ca9d69fb6f4abc1212d2b42971f04e2a" style="width: 100.0%; height: 100.0%;">Index: 2567<br>도로명: 아차산로39길<br>점수: 0.9777604937553406<br>경사도: 5.73</div>`)[0];
+                popup_f2ab3a539e1aa32c7541614ff6b8e2cc.setContent(html_ca9d69fb6f4abc1212d2b42971f04e2a);
+            
+        
+
+        marker_fdd1294973ee13849aa739a89e60864e.bindPopup(popup_f2ab3a539e1aa32c7541614ff6b8e2cc)
+        ;
+
+        
+    
+    
+                marker_fdd1294973ee13849aa739a89e60864e.setIcon(icon_0c68eeddf9c19bb6395124b58e43c602);
+            
+    
+            var poly_line_5cf9a52f5bef63e21928b64f26d864ba = L.polyline(
+                [[37.5307699, 127.0714687], [37.5305175, 127.0713562]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_2c4a17f17feb86db044110f9e5b612c2 = L.marker(
+                [37.5305175, 127.0713562],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_4fb96598ae48e97d354ce1b5bd17c052 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3efb863e9472a19ffb2bba7943b8aa4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1377972102d1139aff13cb3d3af539a = $(`<div id="html_e1377972102d1139aff13cb3d3af539a" style="width: 100.0%; height: 100.0%;">Index: 1352<br>도로명: 능동로4길<br>점수: 0.977424144744873<br>경사도: 3.75</div>`)[0];
+                popup_e3efb863e9472a19ffb2bba7943b8aa4.setContent(html_e1377972102d1139aff13cb3d3af539a);
+            
+        
+
+        marker_2c4a17f17feb86db044110f9e5b612c2.bindPopup(popup_e3efb863e9472a19ffb2bba7943b8aa4)
+        ;
+
+        
+    
+    
+                marker_2c4a17f17feb86db044110f9e5b612c2.setIcon(icon_4fb96598ae48e97d354ce1b5bd17c052);
+            
+    
+            var poly_line_deed54ea1a9b7b0084fb1188a486e8c5 = L.polyline(
+                [[37.539602, 127.0770623], [37.5393058, 127.0769266]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_86348a0869c24f8f34d48994b0cc0dce = L.marker(
+                [37.5393058, 127.0769266],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_c417eeb8587d283019385d03717aef25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98181971139228070c8b265e7a344f7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d930326be8e38681413ecc99364fc5c8 = $(`<div id="html_d930326be8e38681413ecc99364fc5c8" style="width: 100.0%; height: 100.0%;">Index: 6362<br>도로명: 성덕정17길<br>점수: 0.955429196357727<br>경사도: 5.73</div>`)[0];
+                popup_98181971139228070c8b265e7a344f7d.setContent(html_d930326be8e38681413ecc99364fc5c8);
+            
+        
+
+        marker_86348a0869c24f8f34d48994b0cc0dce.bindPopup(popup_98181971139228070c8b265e7a344f7d)
+        ;
+
+        
+    
+    
+                marker_86348a0869c24f8f34d48994b0cc0dce.setIcon(icon_c417eeb8587d283019385d03717aef25);
+            
+    
+            var poly_line_2799cd1f7b32a92e001043612e5736a4 = L.polyline(
+                [[37.5303394, 127.086902], [37.5298551, 127.0868678]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_09ec6dc574323df5b6353f76dae9a245 = L.marker(
+                [37.5298551, 127.0868678],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_d85f1194808b396951d6dd047816e87f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ccf10ccc72f8c2f46cc8f577cf9975d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90c69acdec0f882da6d6f330a6c44d84 = $(`<div id="html_90c69acdec0f882da6d6f330a6c44d84" style="width: 100.0%; height: 100.0%;">Index: 1253<br>도로명: 자양강변길<br>점수: 0.9529613256454468<br>경사도: 0.48</div>`)[0];
+                popup_0ccf10ccc72f8c2f46cc8f577cf9975d.setContent(html_90c69acdec0f882da6d6f330a6c44d84);
+            
+        
+
+        marker_09ec6dc574323df5b6353f76dae9a245.bindPopup(popup_0ccf10ccc72f8c2f46cc8f577cf9975d)
+        ;
+
+        
+    
+    
+                marker_09ec6dc574323df5b6353f76dae9a245.setIcon(icon_d85f1194808b396951d6dd047816e87f);
+            
+    
+            var poly_line_9570a338af2e4008e9c9a4432c5d3443 = L.polyline(
+                [[37.5536311, 127.0955898], [37.5533517, 127.0952941]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var marker_87f39689b21aa0c90457b2097a57cb81 = L.marker(
+                [37.5533517, 127.0952941],
+                {
+}
+            ).addTo(map_db3504bc17513026552102e783faf3b1);
+        
+    
+            var icon_76111f45a3231984ee70f524af44502a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efe75ea01641100379683056f86e66fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03be292f4b1cd70dcfd13a9f56b5ad57 = $(`<div id="html_03be292f4b1cd70dcfd13a9f56b5ad57" style="width: 100.0%; height: 100.0%;">Index: 5424<br>도로명: 영화사로16길<br>점수: 0.950273334980011<br>경사도: 11.7</div>`)[0];
+                popup_efe75ea01641100379683056f86e66fc.setContent(html_03be292f4b1cd70dcfd13a9f56b5ad57);
+            
+        
+
+        marker_87f39689b21aa0c90457b2097a57cb81.bindPopup(popup_efe75ea01641100379683056f86e66fc)
+        ;
+
+        
+    
+    
+                marker_87f39689b21aa0c90457b2097a57cb81.setIcon(icon_76111f45a3231984ee70f524af44502a);
+            
+</script>
+</html>

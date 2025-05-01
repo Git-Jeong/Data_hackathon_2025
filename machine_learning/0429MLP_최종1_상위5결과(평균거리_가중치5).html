@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c57b52b7447b2fc21725753ecfb8394 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c57b52b7447b2fc21725753ecfb8394" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c57b52b7447b2fc21725753ecfb8394 = L.map(
+                "map_5c57b52b7447b2fc21725753ecfb8394",
+                {
+                    center: [37.5462863, 127.08987670000002],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8715d430897b1fc3137060569cfe99e2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8715d430897b1fc3137060569cfe99e2.addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var poly_line_720b9cf20b025db09d6f4fdd23334b5c = L.polyline(
+                [[37.5472793, 127.0982105], [37.5473235, 127.09822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var marker_15d0e11478080e8c14c7b623e20a8c36 = L.marker(
+                [37.547301399999995, 127.09821525],
+                {
+}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var icon_715a360605d47c4e93aa976804946fb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17bb6607a3b3b3b1c762866387066c25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a0938c6d968168fa210b9201e898a0f = $(`<div id="html_4a0938c6d968168fa210b9201e898a0f" style="width: 100.0%; height: 100.0%;"><ul style="width: 120px"><li>Index: 1866</li><li><span>도로명: </span><span>천호대로</span></li><li>점수: 0.9985</li><li>경사도: 8.95°</li></ul></div>`)[0];
+                popup_17bb6607a3b3b3b1c762866387066c25.setContent(html_4a0938c6d968168fa210b9201e898a0f);
+            
+        
+
+        marker_15d0e11478080e8c14c7b623e20a8c36.bindPopup(popup_17bb6607a3b3b3b1c762866387066c25)
+        ;
+
+        
+    
+    
+                marker_15d0e11478080e8c14c7b623e20a8c36.setIcon(icon_715a360605d47c4e93aa976804946fb6);
+            
+    
+            var poly_line_82c36898a5c68ac87574ff2eacb6427b = L.polyline(
+                [[37.5393204, 127.079333], [37.5392987, 127.0790842]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var marker_342ea3b12c8deedb40d72268abe7550b = L.marker(
+                [37.53930955, 127.0792086],
+                {
+}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var icon_36723cf0f113dc2dacb2bf3edabe299d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e120dc29148baa8573371a6c5810377 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d61ea247e01e681fa208d3b87ad9e4aa = $(`<div id="html_d61ea247e01e681fa208d3b87ad9e4aa" style="width: 100.0%; height: 100.0%;"><ul style="width: 120px"><li>Index: 2176</li><li><span>도로명: </span><span>도로_2585</span></li><li>점수: 0.9942</li><li>경사도: 9.71°</li></ul></div>`)[0];
+                popup_5e120dc29148baa8573371a6c5810377.setContent(html_d61ea247e01e681fa208d3b87ad9e4aa);
+            
+        
+
+        marker_342ea3b12c8deedb40d72268abe7550b.bindPopup(popup_5e120dc29148baa8573371a6c5810377)
+        ;
+
+        
+    
+    
+                marker_342ea3b12c8deedb40d72268abe7550b.setIcon(icon_36723cf0f113dc2dacb2bf3edabe299d);
+            
+    
+            var poly_line_9ed003d67e8e5dfeeb35d17fbbd0ccac = L.polyline(
+                [[37.5701344, 127.0857168], [37.5701655, 127.08546]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var marker_063115ed07204f5c17fc11f67a33ea73 = L.marker(
+                [37.57014995, 127.0855884],
+                {
+}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var icon_84aa46316f2c21711328996523eae0d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe12e587f9eae5176c8e5bd063d0d3b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0776d766b6130aa2a93b7cf839e8a3e7 = $(`<div id="html_0776d766b6130aa2a93b7cf839e8a3e7" style="width: 100.0%; height: 100.0%;"><ul style="width: 120px"><li>Index: 3485</li><li><span>도로명: </span><span>용마산로33길</span></li><li>점수: 0.9915</li><li>경사도: 6.71°</li></ul></div>`)[0];
+                popup_fe12e587f9eae5176c8e5bd063d0d3b6.setContent(html_0776d766b6130aa2a93b7cf839e8a3e7);
+            
+        
+
+        marker_063115ed07204f5c17fc11f67a33ea73.bindPopup(popup_fe12e587f9eae5176c8e5bd063d0d3b6)
+        ;
+
+        
+    
+    
+                marker_063115ed07204f5c17fc11f67a33ea73.setIcon(icon_84aa46316f2c21711328996523eae0d2);
+            
+    
+            var poly_line_9deaeddee16d79babade8c058972351c = L.polyline(
+                [[37.5438476, 127.0985941], [37.5441981, 127.1000923]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var marker_b25c129e713b6d598c47c9c54fc421a5 = L.marker(
+                [37.544022850000005, 127.09934319999999],
+                {
+}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var icon_129c6a7dbe0be88c1d68b6d2cebaa23f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c4dc2ecba128143182196f842eeea70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6a939019e65ef140a4c5b9e6a078f50 = $(`<div id="html_a6a939019e65ef140a4c5b9e6a078f50" style="width: 100.0%; height: 100.0%;"><ul style="width: 120px"><li>Index: 2857</li><li><span>도로명: </span><span>천호대로140길</span></li><li>점수: 0.9847</li><li>경사도: 0.83°</li></ul></div>`)[0];
+                popup_1c4dc2ecba128143182196f842eeea70.setContent(html_a6a939019e65ef140a4c5b9e6a078f50);
+            
+        
+
+        marker_b25c129e713b6d598c47c9c54fc421a5.bindPopup(popup_1c4dc2ecba128143182196f842eeea70)
+        ;
+
+        
+    
+    
+                marker_b25c129e713b6d598c47c9c54fc421a5.setIcon(icon_129c6a7dbe0be88c1d68b6d2cebaa23f);
+            
+    
+            var poly_line_ce1f1f0f839bd80081d90f49d9195ff3 = L.polyline(
+                [[37.5305782, 127.0868893], [37.5307173, 127.087167]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var marker_da2003db7798e4b5bb04dcea55b2669f = L.marker(
+                [37.53064775, 127.08702815],
+                {
+}
+            ).addTo(map_5c57b52b7447b2fc21725753ecfb8394);
+        
+    
+            var icon_e5db2d8f26c34bf37553f59b54047249 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44c86ac4a8cb05f811e0be8f402ef526 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8d6b68b590efb99a8f622b4b4f704d6 = $(`<div id="html_c8d6b68b590efb99a8f622b4b4f704d6" style="width: 100.0%; height: 100.0%;"><ul style="width: 120px"><li>Index: 2357</li><li><span>도로명: </span><span>자양로2길</span></li><li>점수: 0.982</li><li>경사도: 1.54°</li></ul></div>`)[0];
+                popup_44c86ac4a8cb05f811e0be8f402ef526.setContent(html_c8d6b68b590efb99a8f622b4b4f704d6);
+            
+        
+
+        marker_da2003db7798e4b5bb04dcea55b2669f.bindPopup(popup_44c86ac4a8cb05f811e0be8f402ef526)
+        ;
+
+        
+    
+    
+                marker_da2003db7798e4b5bb04dcea55b2669f.setIcon(icon_e5db2d8f26c34bf37553f59b54047249);
+            
+</script>
+</html>
